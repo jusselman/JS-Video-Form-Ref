@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'MuseoModerno', cursive;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin: 0;
+}
+
+.video-header {
+    color: rgb(179, 179, 179);
+}
+
+video.view {
+    cursor: pointer;
+    width: 50%;
+    height: 50vh;
+    background: rgb(80, 80, 80) !important;
+    padding: 15px 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.controls {
+    width: 50%;
+    background: rgb(80, 80, 80) !important;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.controls .btn {
+    background: transparent;
+    border: 0;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.timestamp {
+    margin-left: 10px;
+}
+
+@media(max-width: 900px) {
+    .view {
+        height: 30vh !important;
+    }
+
+    .view,
+    .controls {
+        width: 80% !important;
+    }
+}
